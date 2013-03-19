@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="1.0.0" sequence="0" timestamp="-1" analysisTimestamp="1150917274390" release="">
+  <Project filename="&lt;&lt;unnamed project&gt;&gt;">
+    <Jar>C:\Documents and Settings\WhittakT\Workspace\COMP311 Lab 04\bin\RelationshipManagerFactory$RelationshipManagerImpl.class</Jar>
+    <Jar>C:\Documents and Settings\WhittakT\Workspace\COMP311 Lab 04\bin\RelationshipManagerFactory.class</Jar>
+    <AuxClasspathEntry>C:\Documents and Settings\WhittakT\Workspace\COMP311 Lab 04\bin</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Program Files\Java\eclipse\plugins\org.junit_3.8.1\junit.jar</AuxClasspathEntry>
+  </Project>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" abbrev="UuF" category="PERFORMANCE">
+    <Class classname="AssociativeRelationshipManager">
+      <SourceLine classname="AssociativeRelationshipManager" start="-1" end="-1" startBytecode="-1" endBytecode="-1" sourcefile="AssociativeRelationshipManager.java" sourcepath="AssociativeRelationshipManager.java"/>
+    </Class>
+    <Field classname="AssociativeRelationshipManager" name="has inconsistent hierarchy" signature="I" isStatic="false">
+      <SourceLine classname="AssociativeRelationshipManager" start="-1" end="-1" startBytecode="-1" endBytecode="-1" sourcefile="AssociativeRelationshipManager.java" sourcepath="AssociativeRelationshipManager.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" priority="3" abbrev="UwF" category="STYLE">
+    <Class classname="AssociativeRelationshipManagerImplTest">
+      <SourceLine classname="AssociativeRelationshipManagerImplTest" start="-1" end="-1" startBytecode="-1" endBytecode="-1" sourcefile="AssociativeRelationshipManagerImplTest.java" sourcepath="AssociativeRelationshipManagerImplTest.java"/>
+    </Class>
+    <Field classname="AssociativeRelationshipManagerImplTest" name="mgr" signature="LAssociativeRelationshipManager;" isStatic="false">
+      <SourceLine classname="AssociativeRelationshipManagerImplTest" start="-1" end="-1" startBytecode="-1" endBytecode="-1" sourcefile="AssociativeRelationshipManagerImplTest.java" sourcepath="AssociativeRelationshipManagerImplTest.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" priority="3" abbrev="UwF" category="STYLE">
+    <Class classname="AssociativeRelationshipManagerTest">
+      <SourceLine classname="AssociativeRelationshipManagerTest" start="-1" end="-1" startBytecode="-1" endBytecode="-1" sourcefile="AssociativeRelationshipManagerTest.java" sourcepath="AssociativeRelationshipManagerTest.java"/>
+    </Class>
+    <Field classname="AssociativeRelationshipManagerTest" name="mgr" signature="LRelationshipManager;" isStatic="false">
+      <SourceLine classname="AssociativeRelationshipManagerTest" start="-1" end="-1" startBytecode="-1" endBytecode="-1" sourcefile="AssociativeRelationshipManagerTest.java" sourcepath="AssociativeRelationshipManagerTest.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="RCN_REDUNDANT_NULLCHECK_OF_NONNULL_VALUE" priority="3" abbrev="RCN" category="CORRECTNESS">
+    <Class classname="Pair">
+      <SourceLine classname="Pair" start="-1" end="-1" startBytecode="-1" endBytecode="-1" sourcefile="RelationshipManagerImpl.java" sourcepath="RelationshipManagerImpl.java"/>
+    </Class>
+    <Method classname="Pair" name="equals" signature="(Ljava/lang/Object;)Z" isStatic="false">
+      <SourceLine classname="Pair" start="365" end="370" startBytecode="0" endBytecode="25" sourcefile="RelationshipManagerImpl.java" sourcepath="RelationshipManagerImpl.java"/>
+    </Method>
+    <SourceLine classname="Pair" start="365" end="365" startBytecode="8" endBytecode="8" sourcefile="RelationshipManagerImpl.java" sourcepath="RelationshipManagerImpl.java" role="SOURCE_REDUNDANT_NULL_CHECK"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" abbrev="DLS" category="STYLE">
+    <Class classname="RelationshipManagerFactory">
+      <SourceLine classname="RelationshipManagerFactory" start="-1" end="-1" startBytecode="-1" endBytecode="-1" sourcefile="RelationshipManagerFactory.java" sourcepath="RelationshipManagerFactory.java"/>
+    </Class>
+    <Method classname="RelationshipManagerFactory" name="getRelationshipManagerFor" signature="(Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/String;)LRelationshipManager;" isStatic="false">
+      <SourceLine classname="RelationshipManagerFactory" start="46" end="53" startBytecode="0" endBytecode="19" sourcefile="RelationshipManagerFactory.java" sourcepath="RelationshipManagerFactory.java"/>
+    </Method>
+    <LocalVariable name="key" register="5" pc="38" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="RelationshipManagerFactory" start="46" end="46" startBytecode="36" endBytecode="36" sourcefile="RelationshipManagerFactory.java" sourcepath="RelationshipManagerFactory.java"/>
+  </BugInstance>
+  <BugInstance type="SE_NO_SERIALVERSIONID" priority="3" abbrev="SnVI" category="CORRECTNESS">
+    <Class classname="RelationshipManagerFactory">
+      <SourceLine classname="RelationshipManagerFactory" start="-1" end="-1" startBytecode="-1" endBytecode="-1" sourcefile="RelationshipManagerFactory.java" sourcepath="RelationshipManagerFactory.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="RCN_REDUNDANT_NULLCHECK_OF_NONNULL_VALUE" priority="3" abbrev="RCN" category="CORRECTNESS">
+    <Class classname="RelationshipManagerFactory$Pair">
+      <SourceLine classname="RelationshipManagerFactory$Pair" start="-1" end="-1" startBytecode="-1" endBytecode="-1" sourcefile="RelationshipManagerFactory.java" sourcepath="RelationshipManagerFactory.java"/>
+    </Class>
+    <Method classname="RelationshipManagerFactory$Pair" name="equals" signature="(Ljava/lang/Object;)Z" isStatic="false">
+      <SourceLine classname="RelationshipManagerFactory$Pair" start="629" end="634" startBytecode="0" endBytecode="27" sourcefile="RelationshipManagerFactory.java" sourcepath="RelationshipManagerFactory.java"/>
+    </Method>
+    <SourceLine classname="RelationshipManagerFactory$Pair" start="629" end="629" startBytecode="8" endBytecode="8" sourcefile="RelationshipManagerFactory.java" sourcepath="RelationshipManagerFactory.java" role="SOURCE_REDUNDANT_NULL_CHECK"/>
+  </BugInstance>
+  <BugInstance type="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" priority="3" abbrev="UwF" category="STYLE">
+    <Class classname="RelationshipManagerFactoryTest">
+      <SourceLine classname="RelationshipManagerFactoryTest" start="-1" end="-1" startBytecode="-1" endBytecode="-1" sourcefile="RelationshipManagerFactoryTest.java" sourcepath="RelationshipManagerFactoryTest.java"/>
+    </Class>
+    <Field classname="RelationshipManagerFactoryTest" name="factory" signature="LRelationshipManagerFactory;" isStatic="false">
+      <SourceLine classname="RelationshipManagerFactoryTest" start="-1" end="-1" startBytecode="-1" endBytecode="-1" sourcefile="RelationshipManagerFactoryTest.java" sourcepath="RelationshipManagerFactoryTest.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="REC_CATCH_EXCEPTION" priority="3" abbrev="REC" category="STYLE">
+    <Class classname="RelationshipManagerTest">
+      <SourceLine classname="RelationshipManagerTest" start="-1" end="-1" startBytecode="-1" endBytecode="-1" sourcefile="RelationshipManagerTest.java" sourcepath="RelationshipManagerTest.java"/>
+    </Class>
+    <Method classname="RelationshipManagerTest" name="testBadChangeAssocObject" signature="()V" isStatic="false">
+      <SourceLine classname="RelationshipManagerTest" start="339" end="350" startBytecode="0" endBytecode="44" sourcefile="RelationshipManagerTest.java" sourcepath="RelationshipManagerTest.java"/>
+    </Method>
+    <SourceLine classname="RelationshipManagerTest" start="346" end="346" startBytecode="39" endBytecode="39" sourcefile="RelationshipManagerTest.java" sourcepath="RelationshipManagerTest.java"/>
+  </BugInstance>
+  <BugInstance type="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" priority="3" abbrev="UwF" category="STYLE">
+    <Class classname="RelationshipManagerTest">
+      <SourceLine classname="RelationshipManagerTest" start="-1" end="-1" startBytecode="-1" endBytecode="-1" sourcefile="RelationshipManagerTest.java" sourcepath="RelationshipManagerTest.java"/>
+    </Class>
+    <Field classname="RelationshipManagerTest" name="mgr" signature="LRelationshipManager;" isStatic="false">
+      <SourceLine classname="RelationshipManagerTest" start="-1" end="-1" startBytecode="-1" endBytecode="-1" sourcefile="RelationshipManagerTest.java" sourcepath="RelationshipManagerTest.java"/>
+    </Field>
+  </BugInstance>
+  <Errors></Errors>
+  <FindBugsSummary timestamp="Tue, 20 Jun 2006 10:30:45 -0400" total_classes="3" total_bugs="8" total_size="0" num_packages="1" cpu_seconds="23.89" clock_seconds="371.81" peak_mbytes="117.86" gc_seconds="2.44" priority_3="7" priority_2="1">
+    <PackageStats package="" total_bugs="8" total_types="7" total_size="0" priority_3="7" priority_2="1">
+      <ClassStats class="AssociativeRelationshipManager" interface="false" size="0" bugs="1" priority_2="1"/>
+      <ClassStats class="AssociativeRelationshipManagerImplTest" interface="false" size="0" bugs="1" priority_3="1"/>
+      <ClassStats class="AssociativeRelationshipManagerTest" interface="false" size="0" bugs="1" priority_3="1"/>
+      <ClassStats class="Pair" interface="false" size="0" bugs="1" priority_3="1"/>
+      <ClassStats class="RelationshipManagerFactory$Pair" interface="false" size="0" bugs="1" priority_3="1"/>
+      <ClassStats class="RelationshipManagerFactoryTest" interface="false" size="0" bugs="1" priority_3="1"/>
+      <ClassStats class="RelationshipManagerTest" interface="false" size="0" bugs="2" priority_3="2"/>
+    </PackageStats>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>
